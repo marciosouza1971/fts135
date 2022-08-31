@@ -14,7 +14,3 @@ Cypress.Commands.add('login', (email, password) => {
         })
     })
 })
-
-Cypress.Commands.add('getElement', (seletor) => {
-    return cy.get(`[data-test=${seletor}]`)
-})

@@ -26,11 +26,9 @@ describe('API - Posts', () => {
     })
 
     after(() => {
-        cy.log('Limpando os cookies')
-
         Cypress.Cookies.defaults({
-            preserve: []
-        })
+            preserve: 'jwt'
+        })    
     })
 
     it('valida todos os posts', () => {
